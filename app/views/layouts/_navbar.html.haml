@@ -1,0 +1,26 @@
+%button.uk-button.uk-button-default.uk-margin-small-right{:type => "button", "uk-toggle" => "target: #offcanvas-nav-primary"} Primary Nav
+#offcanvas-nav-primary{"uk-offcanvas" => "overlay: true"}
+  .uk-offcanvas-bar.uk-flex.uk-flex-column
+    %ul.uk-nav.uk-nav-primary.uk-nav-center.uk-margin-auto-vertical
+      %li.uk-active
+        %a{:href => "#"} Active
+      %li.uk-parent
+        %ul.uk-nav-sub
+         \ # %li= link_to "Sign off", destroy_user_session_path, method: :delete
+         \ # %li= link_to "Edit profile", edit_user_registration_path
+         \ # %li= link_to "Sign in", new_user_session_path
+         \ # %li= link_to "Sign up", new_user_registration_path
+      %li.uk-nav-header Header
+      %li
+        %a{:href => "#"}
+          %span.uk-margin-small-right{"uk-icon" => "icon: table"}
+          Item
+      %li
+        %a{:href => "#"}
+          %span.uk-margin-small-right{"uk-icon" => "icon: thumbnails"}
+          Item
+      %li.uk-nav-divider
+      %li
+        %a{:href => "#"}
+          %span.uk-margin-small-right{"uk-icon" => "icon: trash"}
+          Item
